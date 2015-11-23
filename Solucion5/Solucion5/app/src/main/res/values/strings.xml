@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Solucion5</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_pantalla2">Pantalla2</string>
+    <string name="title_activity_pantalla3">Pantalla3</string>
+    <string name="title_activity_pantalla4">Pantalla4</string>
+    <string name="title_activity_pantalla5">Pantalla5</string>
+    <string name="title_activity_pantalla6">Pantalla6</string>
+</resources>
