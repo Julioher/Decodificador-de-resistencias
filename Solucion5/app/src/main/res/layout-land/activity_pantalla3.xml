@@ -7,13 +7,22 @@
     tools:context="com.example.julio.solucion5.Pantalla3"
     android:background="#ffefca">
 
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spin2"
+        android:layout_below="@+id/txtvsb"
+        android:layout_alignLeft="@+id/txtvsb"
+        android:layout_alignStart="@+id/txtvsb"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
     <TextView android:text="PRIMERA BANDA" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtvpb"
         android:textSize="20dp"
         android:textStyle="bold"
         android:textColor="#ff0b0f" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,80 +33,50 @@
         android:textColor="#ff0b0f"
         android:background="#00ffffff"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/txtvsb"
-        android:layout_alignEnd="@+id/txtvsb" />
+        android:layout_centerHorizontal="true" />
 
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/spin1"
-        android:layout_below="@+id/txtvpb"
-        android:layout_alignRight="@+id/spin3"
-        android:layout_alignEnd="@+id/spin3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SEGUNDA BANDA"
-        android:id="@+id/txtvsb"
-        android:layout_below="@+id/spin1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textColor="#ff0b0f"
-        android:textStyle="bold"
-        android:textSize="20dp" />
-
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/spin2"
-        android:layout_below="@+id/txtvsb"
-        android:layout_alignRight="@+id/spin1"
-        android:layout_alignEnd="@+id/spin1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TERCERA BANDA"
         android:id="@+id/txtvtb"
-        android:layout_below="@+id/spin2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:textColor="#ff0b0f" />
+        android:textColor="#ff0b0f"
+        android:layout_below="@+id/spin1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Spinner
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spin3"
         android:layout_below="@+id/txtvtb"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignRight="@+id/spin1"
+        android:layout_alignEnd="@+id/spin1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CUARTA BANDA"
         android:id="@+id/txtvcb"
-        android:layout_below="@+id/spin3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:textColor="#ff0b0f"
         android:textSize="20dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_above="@+id/spin3"
+        android:layout_alignLeft="@+id/spin2"
+        android:layout_alignStart="@+id/spin2" />
 
     <Spinner
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spin4"
         android:layout_below="@+id/txtvcb"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignLeft="@+id/txtvcb"
+        android:layout_alignStart="@+id/txtvcb"
+        android:layout_alignRight="@+id/spin2"
+        android:layout_alignEnd="@+id/spin2" />
 
     <Button
         android:layout_width="wrap_content"
@@ -108,20 +87,42 @@
         android:textSize="30dp"
         android:textStyle="bold"
         android:textColor="#ff0b0f"
-        android:layout_below="@+id/spin4"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignTop="@+id/btncalculo1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="&lt;&lt;"
         android:id="@+id/btnvolver"
-        android:textSize="22dp"
+        android:textSize="30dp"
         android:textStyle="bold"
         android:textColor="#ff0b0f"
         android:background="#00ffffff"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEGUNDA BANDA"
+        android:id="@+id/txtvsb"
+        android:textColor="#ff0b0f"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_above="@+id/spin1"
+        android:layout_toLeftOf="@+id/btnvolver"
+        android:layout_toStartOf="@+id/btnvolver" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spin1"
+        android:layout_below="@+id/txtvpb"
+        android:layout_toStartOf="@+id/spin2"
+        android:layout_toLeftOf="@+id/spin2" />
+
 
 </RelativeLayout>

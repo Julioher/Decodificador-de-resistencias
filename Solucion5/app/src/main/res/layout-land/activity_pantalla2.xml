@@ -3,40 +3,40 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Pantalla1"
-    android:background="@drawable/elect">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.julio.solucion5.Pantalla2"
+    android:background="@drawable/elect4">
 
-    <TextView android:text="DECODIFICADOR DE RESISTENCIAS" android:layout_width="wrap_content"
+    <TextView android:text="¿DE CUÁNTAS BANDAS DE COLORES ES LA RESISTENCIA?" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewtitulo"
-        android:textSize="30dp"
+        android:id="@+id/txtvtitulo2"
         android:textColor="#fdff1b"
+        android:textSize="30dp"
         android:textStyle="bold" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="COMENZAR"
-        android:id="@+id/btncomenzar"
-        android:layout_marginBottom="126dp"
-        android:background="#00ffffff"
+        android:text="4 BANDAS"
+        android:id="@+id/btn4banda"
         android:textColor="#fdff1b"
-        android:textSize="45dp"
         android:textStyle="bold"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:textSize="45dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="#00ffffff" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SALIR"
-        android:id="@+id/btnsalir"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="56dp"
+        android:text="5 BANDAS"
+        android:id="@+id/btn5banda"
         android:textSize="45dp"
         android:textStyle="bold"
         android:textColor="#fdff1b"
-        android:background="#00ffffff" />
+        android:background="#00ffffff"
+        android:layout_below="@+id/btn4banda"
+        android:layout_alignLeft="@+id/btn4banda"
+        android:layout_alignStart="@+id/btn4banda" />
 
 </RelativeLayout>

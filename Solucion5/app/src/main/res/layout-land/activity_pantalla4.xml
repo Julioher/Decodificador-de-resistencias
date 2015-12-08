@@ -20,40 +20,44 @@
         android:text="CALCULAR"
         android:id="@+id/btncalculo2"
         android:textColor="#ff0b0f"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:textStyle="bold"
         android:background="#00ffffff"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/button"
-        android:layout_toEndOf="@+id/button" />
+        android:layout_above="@+id/btnvolver2"
+        android:layout_toLeftOf="@+id/btnvolver2"
+        android:layout_toStartOf="@+id/btnvolver2" />
 
     <Spinner
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spinb1"
         android:layout_below="@+id/txtvpb2"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/spinb2"
+        android:layout_toLeftOf="@+id/spinb2" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SEGUNDA BANDA"
         android:id="@+id/txtvsb2"
-        android:layout_below="@+id/spinb1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:textColor="#ff0b0f" />
+        android:textColor="#ff0b0f"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
 
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/spinb2"
         android:layout_below="@+id/txtvsb2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignRight="@+id/btnvolver2"
+        android:layout_alignEnd="@+id/btnvolver2"
+        android:layout_alignLeft="@+id/txtvb4"
+        android:layout_alignStart="@+id/txtvb4" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -68,32 +72,37 @@
         android:textStyle="bold" />
 
     <Spinner
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spinb3"
         android:layout_below="@+id/txtvb3"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/spinb2"
+        android:layout_alignRight="@+id/spinb1"
+        android:layout_alignEnd="@+id/spinb1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CUARTA BANDA"
         android:id="@+id/txtvb4"
-        android:layout_below="@+id/spinb3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:textColor="#ff0b0f"
         android:textSize="20dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/txtvb3"
+        android:layout_alignRight="@+id/txtvsb2"
+        android:layout_alignEnd="@+id/txtvsb2" />
 
     <Spinner
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spinb4"
-        android:layout_below="@+id/txtvb4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignTop="@+id/spinb3"
+        android:layout_alignLeft="@+id/txtvb4"
+        android:layout_alignStart="@+id/txtvb4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -108,37 +117,39 @@
         android:textColor="#ff0b0f" />
 
     <Spinner
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spinb5"
         android:layout_below="@+id/txtvb5"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/spinb3"
+        android:layout_alignEnd="@+id/spinb3" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="AQUÍ"
         android:id="@+id/button"
-        android:textSize="30dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:textSize="25dp"
         android:textStyle="bold"
         android:textColor="#ff0b0f"
-        android:background="#00ffffff" />
+        android:background="#00ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btncalculo2"
+        android:layout_toStartOf="@+id/btncalculo2" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="&lt;&lt;"
         android:id="@+id/btnvolver2"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/btncalculo2"
-        android:layout_toEndOf="@+id/btncalculo2"
-        android:textSize="22dp"
+        android:textSize="25dp"
         android:textStyle="bold"
         android:background="#00ffffff"
-        android:textColor="#ff0b0f" />
+        android:textColor="#ff0b0f"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
